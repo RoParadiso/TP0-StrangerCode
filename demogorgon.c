@@ -98,3 +98,8 @@ void resultado_enfrentamiento(float fuerza_psiquica){
 		printf(MSJ_GANO);
 	}
 }
+
+void saludo_final(){
+	printf("Gracias por jugar a Stranger Code\n");
+	printf("Espero que te hayas divertido!\n");	
+}
