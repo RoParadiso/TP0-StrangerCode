@@ -67,7 +67,7 @@ char recibir_confianza(){
 	char nivel_confianza = DEF_NIVEL_CONFIANZA;
 	printf(MSJ_CONFIANZA);
 	scanf(" %c"; &nivel_confianza);
-	if(nivel_confianza = !CONFIANZA_BAJA || nivel_confianza = !CONFIANZA_MEDIA || nivel_confianza = !CONFIANZA_ALTA){
+	if(nivel_confianza != CONFIANZA_BAJA || nivel_confianza != CONFIANZA_MEDIA || nivel_confianza != CONFIANZA_ALTA){
 		printf(MSJ_CONFIANZA);
 		scanf(" %c"; &nivel_confianza);
 	}

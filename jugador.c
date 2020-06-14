@@ -12,8 +12,8 @@ int main(){
 	char confianza = DEF_NIVEL_CONFIANZA_JUGADOR;
 	float fuerza_psiquica = DEF_FUERZA_PSIQUICA;
 
-
 	comenzar_enfrentamiento();
+	
 	animo = recibir_animo();
 	printf("Animo: %i\n", &animo);
 
@@ -24,6 +24,9 @@ int main(){
 	printf("fuerza_psiquica = %f\n", &fuerza_psiquica);
 
 	resultado_enfrentamiento();
-	
+
+	printf("Gracias por jugar a Stranger Code\n");
+	printf("Espero que te hayas divertido!\n");
+
 	return 0;
 }
