@@ -54,22 +54,21 @@ int recibir_animo(){
 	int nivel_animo = DEF_ANIMO;
 	printf(MSJ_ANIMO);
 	scanf("%i", &nivel_animo);
-	if(nivel_animo < MIN_ANIMO) && (nivel_animo > MAX_ANIMO){
+	if((nivel_animo < MIN_ANIMO) && (nivel_animo > MAX_ANIMO)){
 		printf(MSJ_MAL_INGRESO);
 		printf(MSJ_ANIMO);
 		scanf("%i", &nivel_animo);
 	}
-
 	return nivel_animo;
 }
 
 char recibir_confianza(){
 	char nivel_confianza = DEF_NIVEL_CONFIANZA;
 	printf(MSJ_CONFIANZA);
-	scanf(" %c"; &nivel_confianza);
-	if(nivel_confianza != CONFIANZA_BAJA || nivel_confianza != CONFIANZA_MEDIA || nivel_confianza != CONFIANZA_ALTA){
+	scanf(" %c", &nivel_confianza);
+	if((nivel_confianza != CONFIANZA_BAJA) || (nivel_confianza != CONFIANZA_MEDIA) || (nivel_confianza != CONFIANZA_ALTA)){
 		printf(MSJ_CONFIANZA);
-		scanf(" %c"; &nivel_confianza);
+		scanf(" %c", &nivel_confianza);
 	}
 	return nivel_confianza;
 }
@@ -77,11 +76,11 @@ char recibir_confianza(){
 
 float recibir_fuerza_psiquica(int nivel_animo, char nivel_confianza){
 	float fuerza_psiquica = DEF_FUERZA_PSQUICA;
-	if(nivel_confianza = CONFIANZA_BAJA){
+	if((nivel_confianza = CONFIANZA_BAJA)){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_BAJO);
-	}else if(nivel_confianza = CONFIANZA_MEDIA){
+	}else if((nivel_confianza = CONFIANZA_MEDIA)){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_MEDIO);
-	}else if(nivel_confianza = CONFIANZA_ALTA){
+	}else if((nivel_confianza = CONFIANZA_ALTA)){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_ALTO);
 	}
 
@@ -92,14 +91,9 @@ float recibir_fuerza_psiquica(int nivel_animo, char nivel_confianza){
 void resultado_enfrentamiento(float fuerza_psiquica){
 	if (fuerza_psiquica < VALOR_GANO_JUSTO){
 		printf(MSJ_RESULT_DESC);
-	}else if(fuerza_psiquica >= VALOR_GANO_JUSTO && < fuerza_psiquica < MIN_GANO){
+	}else if((fuerza_psiquica >= VALOR_GANO_JUSTO) && (fuerza_psiquica < MIN_GANO)){
 		printf(MSJ_GANO_JUSTO);
-	}else if(fuerza_psiquica >= MIN_GANO && fuerza_psiquica <= MAX_GANO){
+	}else if((fuerza_psiquica >= MIN_GANO) && (fuerza_psiquica <= MAX_GANO)){
 		printf(MSJ_GANO);
 	}
-}
-
-void saludo_final(){
-	printf("Gracias por jugar a Stranger Code\n");
-	printf("Espero que te hayas divertido!\n");	
 }

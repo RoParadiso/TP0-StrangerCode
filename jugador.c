@@ -7,7 +7,7 @@ const float DEF_FUERZA_PSIQUICA = -1.0F;
 
 int recibir_animo();
 char recibir_confianza();
-float recibir_fuerza_psiquica ();
+float recibir_fuerza_psiquica();
 
 
 int main(){
@@ -28,8 +28,6 @@ int main(){
 	printf("Fuerza psiquica = %f\n", &fuerza_psiquica);
 
 	resultado_enfrentamiento();
-
-	saludo_final();
 
 	return 0;
 }
