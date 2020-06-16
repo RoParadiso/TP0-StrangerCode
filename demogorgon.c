@@ -61,9 +61,9 @@ int recibir_animo(){
 	return nivel_animo;
 }
 
-bool verificar_animo(int animo_verificar){
+bool verificar_animo_recib(int animo_recibido);{
 	bool verificado = ANIMO_VERIFICADO;
-	if((animo_verificar < MIN_ANIMO) || (animo_verificar > MAX_ANIMO)){
+	if((animo_recibido < MIN_ANIMO) || (animo_recibido > MAX_ANIMO)){
 		verificado = ANIMO_NO_VERIFICADO;
 	}
 	return verificado;
