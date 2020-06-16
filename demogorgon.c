@@ -75,11 +75,11 @@ char recibir_confianza(){
 
 float recibir_fuerza_psiquica(int nivel_animo, char nivel_confianza){
 	float fuerza_psiquica = DEF_FUERZA_PSIQUICA;
-	if((nivel_confianza = CONFIANZA_BAJA)){
+	if((nivel_confianza == CONFIANZA_BAJA)){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_BAJO);
-	}else if((nivel_confianza = CONFIANZA_MEDIA)){
+	}else if((nivel_confianza == CONFIANZA_MEDIA)){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_MEDIO);
-	}else if((nivel_confianza = CONFIANZA_ALTA)){
+	}else if((nivel_confianza == CONFIANZA_ALTA)){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_ALTO);
 	}
 
