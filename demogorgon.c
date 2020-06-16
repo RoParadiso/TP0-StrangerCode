@@ -87,7 +87,7 @@ char recibir_confianza(){
 bool verificar_confianza(char confianza_verif){
 	bool verificada = NIVEL_CONFIANZA_NO_VERIF;
 	if(confianza_verif == CONFIANZA_BAJA || confianza_verif == CONFIANZA_MEDIA || confianza_verif == CONFIANZA_ALTA{	
-		verificada = NIVEL_CONFIANZA_VERIF
+		verificada = NIVEL_CONFIANZA_VERIF;
 	}
 	return verificado;
 }
