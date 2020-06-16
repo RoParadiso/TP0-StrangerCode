@@ -27,7 +27,7 @@ int main(){
 	fuerza_psiquica = recibir_fuerza_psiquica();
 	printf("Fuerza psiquica = %f\n", fuerza_psiquica);
 
-	resultado_enfrentamiento();
+	resultado_enfrentamiento(float fuerza_psiquica);
 
 	return 0;
 }
