@@ -2,8 +2,8 @@
 
 #define MSJ_ENFRENTAMIENTO "\n\nEl enfrentamiento esta por comenzar\n"
 
-#define MSJ_MAL_INGRESO "Ingreso no valido\n"
-#define MSJ_ANIMO "Ingrese el animo de El(Eleven) en un rango del 1 al 100 inclusive\n"
+#define MSJ_MAL_INGRESO "\nIngreso no valido\n"
+#define MSJ_ANIMO "\nIngrese el animo de El(Eleven) en un rango del 1 al 100 inclusive\n"
 
 const int DEF_ANIMO = 0;
 const int MIN_ANIMO = 1;
@@ -12,7 +12,7 @@ const int MAX_ANIMO = 100;
 const bool ANIMO_VERIFICADO = true;
 const bool ANIMO_NO_VERIFICADO = false;
 
-#define MSJ_CONFIANZA "Ingrese el nivel de confianza que tiene El(Eleven) con sus amigos\nBajo [b] - Medio [m] - Alto [a]\n"
+#define MSJ_CONFIANZA "\nIngrese el nivel de confianza que tiene El(Eleven) con sus amigos\nBajo [b] - Medio [m] - Alto [a]\n"
 
 const char DEF_NIVEL_CONFIANZA = 'z';
 #define CONFIANZA_BAJA 'b'
@@ -35,7 +35,7 @@ const float MIN_GANO = 67.0F;
 const float MAX_GANO = 370.0F;
 const float VALOR_GANO_JUSTO = 65.0F;
 
-#define MSJ_ERROR_CALCULAR_FUERZA "Algo malio sal"
+#define MSJ_ERROR_CALCULAR_FUERZA "Algo malio sal\n"
 
 
 #define MSJ_GANO "\n\n\n\n\tEleven conto con su mayor animo y con la confianza de sus amigos\n\tpor lo que logro vencer al Demogorgon con su fuerza psquica!!!\n\n\n\t \n"
@@ -67,7 +67,7 @@ char recibir_confianza(){
 		printf(MSJ_CONFIANZA);
 		scanf(" %c", &nivel_confianza);
 		if(((nivel_confianza == CONFIANZA_BAJA) || (nivel_confianza == CONFIANZA_MEDIA)) || (nivel_confianza == CONFIANZA_ALTA)){
-			printf("Ingreso correcto\n");
+			printf("\nIngreso correcto\n");
 		}else{
 				printf(MSJ_MAL_INGRESO);
 			}
