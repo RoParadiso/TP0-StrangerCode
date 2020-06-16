@@ -5,10 +5,6 @@ const int DEF_ANIMO_JUGADOR = 0;
 const char DEF_NIVEL_CONFIANZA_JUGADOR = 'w';
 const float DEF_FUERZA_PSIQUICA = -1.0F;
 
-/* int recibir_animo();
-char recibir_confianza();
-float recibir_fuerza_psiquica();
-*/
 
 int main(){
 
