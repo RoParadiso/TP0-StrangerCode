@@ -24,7 +24,7 @@ int main(){
 	confianza = recibir_confianza();
 	printf("Confianza:  %c\n", confianza);
 
-	fuerza_psiquica = recibir_fuerza_psiquica();
+	fuerza_psiquica = recibir_fuerza_psiquica(int nivel_animo, char nivel_confianza);
 	printf("Fuerza psiquica = %f\n", fuerza_psiquica);
 
 	resultado_enfrentamiento(float fuerza_psiquica);
