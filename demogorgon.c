@@ -90,6 +90,7 @@ float recibir_fuerza_psiquica(int nivel_animo, char nivel_confianza){
 
 
 void resultado_enfrentamiento(float fuerza_psiquica){
+	float fuerza_psiquica = DEF_FUERZA_PSIQUICA;
 	if (fuerza_psiquica < VALOR_GANO_JUSTO){
 		printf(MSJ_RESULT_DESC);
 	}else if((fuerza_psiquica >= VALOR_GANO_JUSTO) && (fuerza_psiquica < MIN_GANO)){
