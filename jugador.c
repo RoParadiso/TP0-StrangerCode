@@ -29,5 +29,6 @@ int main(){
 
 	resultado_enfrentamiento(float fuerza_psiquica);
 
+	
 	return 0;
 }
