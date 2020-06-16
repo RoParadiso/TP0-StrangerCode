@@ -74,7 +74,7 @@ char recibir_confianza(){
 	do{
 		printf(MSJ_CONFIANZA);
 		scanf(" %c", &nivel_confianza);
-		if(verificar_nivel_confianza_recib(char confianza_recibida){
+		if(verificar_nivel_confianza_recib(char confianza_recibida)){
 			printf("\nIngreso correcto\n");
 		}else{
 				printf(MSJ_MAL_INGRESO);
@@ -94,11 +94,11 @@ bool verificar_nivel_confianza_recib(char confianza_recibida){
 		
 float recibir_fuerza_psiquica(int nivel_animo, char nivel_confianza){
 	float fuerza_psiquica = DEF_FUERZA_PSIQUICA;
-	if((nivel_confianza == CONFIANZA_BAJA)){
+	if(nivel_confianza == CONFIANZA_BAJA){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_BAJO);
-	}else if((nivel_confianza == CONFIANZA_MEDIA)){
+	}else if(nivel_confianza == CONFIANZA_MEDIA){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_MEDIO);
-	}else if((nivel_confianza == CONFIANZA_ALTA)){
+	}else if(nivel_confianza == CONFIANZA_ALTA){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_ALTO);
 	}
 
