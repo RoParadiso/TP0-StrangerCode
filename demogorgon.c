@@ -66,12 +66,12 @@ char recibir_confianza(){
 	do{
 		printf(MSJ_CONFIANZA);
 		scanf(" %c", &nivel_confianza);
-		if((nivel_confianza == CONFIANZA_BAJA) || (nivel_confianza == CONFIANZA_MEDIA) || (nivel_confianza == CONFIANZA_ALTA)){
+		if(((nivel_confianza == CONFIANZA_BAJA) || (nivel_confianza == CONFIANZA_MEDIA)) || (nivel_confianza == CONFIANZA_ALTA)){
 			printf("Ingreso correcto\n");
 		}else{
 				printf(MSJ_MAL_INGRESO);
 			}
-	}while ((nivel_confianza != CONFIANZA_BAJA) && (nivel_confianza != CONFIANZA_MEDIA) && (nivel_confianza != CONFIANZA_ALTA)){		
+	}while (((nivel_confianza != CONFIANZA_BAJA) && (nivel_confianza != CONFIANZA_MEDIA)) && (nivel_confianza != CONFIANZA_ALTA)){		
 	}
 	return nivel_confianza;
 }
