@@ -22,7 +22,7 @@ const char DEF_NIVEL_CONFIANZA = 'z';
 const bool NIVEL_CONFIANZA_VERF = true;
 const bool NIVEL_CONFIANZA_NO_VERF = false;
 
-const float DEF_FUERZA_PSQUICA = -0.1F;
+const float DEF_FUERZA_PSIQUICA = -0.1F;
 const float MULTIP_CONF_BAJO = 0.7F;
 const float MULTIP_CONF_MEDIO = 1.3F;
 const float MULTIP_CONF_ALTO = 3.7F;
@@ -45,7 +45,6 @@ const float VALOR_GANO_JUSTO = 65.0F;
 #define MSJ_RESULT_DESC "\n\n\n\n\tEleven enfrento al Demogorgon pero no parecia que lo pudiera vencer\n\thasta que una luz cubrio todo el lugar desapareciendo al Demogorgon junto a Eleven\n\n\tFin.. ?\n\n"
 
 
-
 void comenzar_enfrentamiento(){
 		printf(MSJ_ENFRENTAMIENTO);
 }
@@ -54,7 +53,7 @@ int recibir_animo(){
 	int nivel_animo = DEF_ANIMO;
 	printf(MSJ_ANIMO);
 	scanf("%i", &nivel_animo);
-	while((nivel_animo < MIN_ANIMO) && (nivel_animo > MAX_ANIMO)){
+	while ((nivel_animo < MIN_ANIMO) && (nivel_animo > MAX_ANIMO)){
 		printf(MSJ_MAL_INGRESO);
 		printf(MSJ_ANIMO);
 		scanf("%i", &nivel_animo);
@@ -66,7 +65,7 @@ char recibir_confianza(){
 	char nivel_confianza = DEF_NIVEL_CONFIANZA;
 	printf(MSJ_CONFIANZA);
 	scanf(" %c", &nivel_confianza);
-	while((nivel_confianza != CONFIANZA_BAJA) || (nivel_confianza != CONFIANZA_MEDIA) || (nivel_confianza != CONFIANZA_ALTA)){
+	while ((nivel_confianza != CONFIANZA_BAJA) || (nivel_confianza != CONFIANZA_MEDIA) || (nivel_confianza != CONFIANZA_ALTA)){
 		printf(MSJ_MAL_INGRESO);
 		printf(MSJ_CONFIANZA);
 		scanf(" %c", &nivel_confianza);
@@ -74,9 +73,8 @@ char recibir_confianza(){
 	return nivel_confianza;
 }
 
-
 float recibir_fuerza_psiquica(int nivel_animo, char nivel_confianza){
-	float fuerza_psiquica = DEF_FUERZA_PSQUICA;
+	float fuerza_psiquica = DEF_FUERZA_PSIQUICA;
 	if((nivel_confianza = CONFIANZA_BAJA)){
 		fuerza_psiquica = (nivel_animo * MULTIP_CONF_BAJO);
 	}else if((nivel_confianza = CONFIANZA_MEDIA)){
